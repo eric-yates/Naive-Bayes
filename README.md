@@ -71,7 +71,7 @@ model = NaiveBayes()
 model.fit(Xtrain, Ttrain)
 
 acc_train = model.score(Xtrain, Ttrain)
-acc_est = model.score(Xtest, Ttest)
+acc_test = model.score(Xtest, Ttest)
 
 print 'Train Accuracy:', 100 * np.round(acc_train, 3)
 print 'Test Accuracy:', 100 * np.round(acc_test, 3)

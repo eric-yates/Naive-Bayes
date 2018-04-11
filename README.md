@@ -7,7 +7,6 @@ This model has not been optimized and is intended for educational purposes rathe
 
 These instructions will get a copy of the project up and running on your local machine.
 
-
 ### Prerequisites
 
 Instructions for installing these software are listed in the next section: Installing. These are the software packages needed to run:
@@ -19,6 +18,8 @@ These Python packages are also needed:
 * numpy
 * matplotlib
 * pandas
+* scikit-learn
+* scipy
 
 
 ### Installing
@@ -31,6 +32,8 @@ By default, Python should come with pip (a package manager). Use it to install t
 pip install numpy
 pip install matplotlib
 pip install pandas
+pip install scikit-learn
+pip install scipy
 ```
 
 ## Usage
@@ -79,6 +82,8 @@ print('Test Accuracy:', 100 * np.round(sTest, 3), '%\n')
 * [Numpy](http://www.numpy.org/) - Python library for mathematical and matrix operations 
 * [Matplotlib](https://matplotlib.org/) - Python library for graphing data
 * [Pandas](https://pandas.pydata.org/pandas-docs/stable/) - Python library for data manipulation
+* [Scikit-learn](http://scikit-learn.org/stable/) - Python library used for its shuffle function
+* [Scipy](https://www.scipy.org/about.html) - Python library used for its statistical distributions
 
 
 ## Authors

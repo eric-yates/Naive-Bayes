@@ -56,24 +56,25 @@ done prior to creating a model.
 from naive_bayes import NaiveBayes
 
 
-X, Y = get_data(cd, limit=limit)
+X = ...   # input data
+T = ...   # target data
 
 proportion_train = 0.8
 
 Ntrain = int(proportion_train * len(Y))
 
-Xtrain, Ytrain = X[:Ntrain], Y[:Ntrain]
-Xtest, Ytest = X[Ntrain:], Y[Ntrain:]
+Xtrain, Ttrain = X[:Ntrain], T[:Ntrain]
+Xtest, Ttest = X[Ntrain:], T[Ntrain:]
 
 model = NaiveBayes()
 
-model.fit(Xtrain, Ytrain)
+model.fit(Xtrain, Ttrain)
 
-sTrain = model.score(Xtrain, Ytrain)
-sTest = model.score(Xtest, Ytest)
+acc_train = model.score(Xtrain, Ttrain)
+acc_est = model.score(Xtest, Ttest)
 
-print 'Train Accuracy:', 100 * np.round(sTrain, 3)
-print 'Test Accuracy:', 100 * np.round(sTest, 3), '%\n'
+print 'Train Accuracy:', 100 * np.round(acc_train, 3)
+print 'Test Accuracy:', 100 * np.round(acc_test, 3)
 ```
 
 ## Built With

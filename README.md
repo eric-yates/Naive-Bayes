@@ -72,8 +72,8 @@ model.fit(Xtrain, Ytrain)
 sTrain = model.score(Xtrain, Ytrain)
 sTest = model.score(Xtest, Ytest)
 
-print('Train Accuracy:', 100 * np.round(sTrain, 3))
-print('Test Accuracy:', 100 * np.round(sTest, 3), '%\n')
+print 'Train Accuracy:', 100 * np.round(sTrain, 3)
+print 'Test Accuracy:', 100 * np.round(sTest, 3), '%\n'
 ```
 
 ## Built With
